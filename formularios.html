@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body style="background-color:rgb(251, 221, 184);">
+    <div>
+        <center>
+            <em style="color:rgb(139, 87, 95); text-shadow: 2px 2px 3px #090908; font-size: 50px;"> Este es el formato para Formularios</em>
+        </center>
+        <div>
+            <center>
+                <div style="background-image: url(img/fondo1.jpg)">
+                <table>
+                    <tr>
+                        <br><br>
+                      <td><li><a style="font-family:Cream Cake; 
+                        color: black; font-size: 30px;" href="texto.html" target="_blank; ">Formato de texto</a></li></td>
+                      <td><li><a style="font-family:Cream Cake; 
+                        color: black; font-size: 30px;" href="imagenes.html" target="_blank">Imagenes </a></li></td>
+                    </tr>
+                    <tr>
+                        <td><li><a style="font-family:Cream Cake; 
+                            color: black; font-size: 30px;" href="tablas.html" target="_blank">Tablas</a></li></td>
+                        <td><li><a style="font-family:Cream Cake; 
+                        color: black; font-size: 30px;" href="listas.html" target="_blank">Listas</a></li></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><li><a style="font-family:Cream Cake; 
+                            color: black; font-size: 30px;" href="formularios.html" target="_blank">Formularios </a></li></td>
+                        <td><li><a style="font-family:Cream Cake; 
+                                color: black; font-size: 30px;" href="media.html" target="_blank">Media</a></li></td>
+                    </tr>
+                    
+                  </table>
+                  <br><br>
+                
+            </center>
+         <div style="background-color: rgb(249, 178,190); text-align: center">
+            <h1 style="font-family:Segoe Script;">Formularios</h1>
+        </div>   
+        <h1 style="text-align: center;font-family: Comic Sans MS; color: palevioletred;">Ejemplos de formularios </h1>
+        <div>
+            <p style="text-align: center; font-size: larger">
+              Se utiliza un formulario HTML para recopilar la entrada del usuario. La
+              entrada del usuario se envía con mayor frecuencia a un servidor para su
+              procesamiento.
+            </p>
+            <h2 style="text-align: center">Ejemplo</h2>
+            <center>
+              <form action="/action_page.php">
+                <label for="fname">Nombres:</label><br />
+                <input type="text" id="fname" name="fname" value="Miguel" /><br />
+                <label for="lname">Apellidos:</label><br />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  value="Rodríguez"
+                /><br /><br />
+                <input type="submit" value="Enviar" />
+              </form>
+              <h1 style="text-align: center;font-family: Comic Sans MS; color: palevioletred;">En código html seria asi</h1>
+              &lt;form action="/action_page.php"&gt;
+                &lt;label for="fname">Nombres:&lt;/label&gt;<br />
+                &lt;input type="text" id="fname" name="fname" value="Miguel" /&gt;<br />
+                &lt;label for="lname">Apellidos:&lt;/label&gt;<br />
+                &lt;input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  value="Rodríguez"
+                /&gt;<br /><br />
+                &lt;input type="submit" value="Enviar" /&gt;
+              &lt;/form&gt;
+            </center>
+            <p>
+              Si hace clic en el botón "Enviar", los datos del formulario se enviarán
+              a una página llamada "/action_page.php".
+            </p>
+      
+            <h1 style="text-align: center;font-family: Comic Sans MS; color: palevioletred;">Campos de texto</h1>
+            <p style="text-align: center; font-size: larger">
+              define &lt;input type="text"&gt; un campo de entrada de una sola línea
+              para la entrada de texto.
+            </p>
+            <h2 style="text-align: center">Ejemplo</h2>
+            <center>
+              <form>
+                <label for="fname">Nombres:</label><br />
+                <input type="text" id="fname" name="fname" /><br />
+                <label for="lname">Apellidos:</label><br />
+                <input type="text" id="lname" name="lname" />
+              </form>
+            </center>
+            <h1 style="text-align: center;font-family: Comic Sans MS; color: palevioletred;">
+              El elemento &lt;label&gt; &lt;/label&gt;
+            </h1>
+            <p style="text-align: center; font-size: larger">
+              La etiqueta &lt;label&gt; define una etiqueta para muchos elementos de
+              formulario. El elemento &lt;label&gt; es útil para los usuarios de
+              lectores de pantalla, porque el lector de pantalla leerá en voz alta la
+              etiqueta cuando el usuario se centre en el elemento de entrada. El
+              elemento &lt;label&gt; elemento también ayuda a los usuarios que tienen
+              dificultades para hacer clic en regiones muy pequeñas (como botones de
+              radio o casillas de verificación), porque cuando el usuario hace clic en
+              el texto dentro del elemento &lt;label&gt;, alterna el botón de
+              radio/casilla de verificación. El atributo for de la etiqueta
+              &lt;label&gt; debe ser igual al idatributo del elemento &lt;input&gt;
+              para unirlos.
+            </p>
+            <h1 style="text-align: center;font-family: Comic Sans MS; color: palevioletred;" >
+              Botones de radio
+            </h1>
+            <p style="text-align: center; font-size: larger">
+              define &lt;input type="radio"&gt; como un botón de opción. Los botones
+              de opción le permiten al usuario seleccionar UNA de un número limitado
+              de opciones.
+            </p>
+            <h2 style="text-align: center">Ejemplo</h2>
+            <dl>
+              <p style="text-align: center;">Elija su idioma web favorito:</p>
+              <center>
+              <form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label for="javascript">JavaScript</label>
+              </form>
+              </center> 
+              <h1 style="text-align: center;font-family: Comic Sans MS; color: palevioletred;">
+                Casillas de verificación
+              </h1>
+              <p style="text-align: center; font-size: larger">
+                define &lt;input type="checkbox"&gt; una casilla de verificación .
+      
+                Las casillas de verificación permiten al usuario seleccionar 0 o más opciones de un número limitado de opciones.
+              </p>
+              <h2 style="text-align: center">Ejemplo</h2>
+              <dl>
+                <p style="text-align: center;">Elija su idioma web favorito:</p>
+                <center>
+                <form>
+                  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                  <label for="vehicle1"> Tengo una moto</label><br>
+                  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                  <label for="vehicle2"> Tengo un coche</label><br>
+                  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                  <label for="vehicle3"> Tengo un barco</label>
+                </form>
+                </center>
+          </div>
+    
+    </div>
+</div>
+</body>
+</html>
